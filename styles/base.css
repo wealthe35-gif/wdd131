@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: white;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a2a3a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.title {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+
+.holy-grail-grid {
+    display: grid;
+    grid-template-columns: 180px 2fr 1fr;
+    max-width: 1200px;
+    padding: 1.5rem 0;
+}
+.about-card {
+    grid-column: 2;
+}
+
+.resources-card {
+    grid-column: 3;
+}
+
+.card {
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    height: fit-content;
+}
+
+.card h3 {
+    background-color: #1f4e79;
+    color: white;
+    margin: 0;
+    padding: 0.9rem;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+}
+
+
+.profile-holygrail {
+    display: grid;
+    grid-template-columns: 1fr 100px; 
+    gap: 0;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.bio-photo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about-card h4 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem 0;
+    color: #1e293b;
+}
+
+.country-holygrail {
+    display: grid;
+    grid-template-columns: 1fr 100px; 
+    gap: 1.5rem;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 1.5rem;
+}
+
+.country-flag figure {
+    margin: 0;
+    text-align: center;
+}
+
+.country-flag img {
+    width: 100px;
+    height: auto;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+}
+
+.country-flag figcaption {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: grey;
+    margin-top: 0.25rem;
+}
+.resources-card ul {
+    padding-left: 20px;
+}
+
+.resources-card li {
+    margin-bottom: 10px;
+}
+
+.resources-card a {
+    color: blue;
+}
+
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.4rem ;
+}
+
+.modification {
+    color: #fde047;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
