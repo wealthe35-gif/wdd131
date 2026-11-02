@@ -32,6 +32,11 @@ nav {
     padding: 8px;
 }
 
+nav a:hover {
+    background-color: #1f4e79;
+    border-radius: 5px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -136,7 +141,7 @@ nav a {
 .country-flag figcaption {
     font-size: 0.75rem;
     font-style: italic;
-    color: grey;
+    color: #595959;
     margin-top: 0.25rem;
 }
 .resources-card ul {
