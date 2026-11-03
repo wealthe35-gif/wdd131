@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: white;
@@ -30,6 +31,15 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 8px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.5rem;
 }
 
 nav a:hover {
@@ -37,47 +47,45 @@ nav a:hover {
     border-radius: 5px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.95rem;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-.title {
+h1 {
     text-align: center;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
+    color: #17324d;
+    font-size: 2rem;
+    color: white;
 }
-
-.title h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: black;
-}
-
 
 .holy-grail-grid {
-    display: grid;
-    grid-template-columns: 180px 2fr 1fr;
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     padding: 1.5rem 0;
 }
-.about-card {
-    grid-column: 2;
-}
 
-.resources-card {
-    grid-column: 3;
+@media screen and (min-width: 701px) {
+    .holy-grail-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 1.5rem;
+        align-items: start;
+    }
 }
 
 .card {
-    border: 1px solid white;
+    border: 1px solid #e2e8f0; 
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     height: fit-content;
 }
 
-.card h3 {
+.card h2 {
     background-color: #1f4e79;
     color: white;
     margin: 0;
@@ -92,18 +100,17 @@ nav a {
     font-size: 0.95rem;
 }
 
-
 .profile-holygrail {
-    display: grid;
-    grid-template-columns: 1fr 100px; 
-    gap: 0;
-    align-items: start;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 1.5rem;
 }
 
 .bio-photo img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -118,17 +125,18 @@ nav a {
 }
 
 .country-holygrail {
-    display: grid;
-    grid-template-columns: 1fr 100px; 
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    border-top: 1px solid white;
+    gap: 1rem;
+    border-top: 1px solid #e2e8f0;
     padding-top: 1.5rem;
 }
 
 .country-flag figure {
     margin: 0;
     text-align: center;
+    width: 150px;
 }
 
 .country-flag img {
@@ -144,16 +152,36 @@ nav a {
     color: #595959;
     margin-top: 0.25rem;
 }
-.resources-card ul {
-    padding-left: 20px;
-}
 
+.resources-card ul {
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+}
 .resources-card li {
     margin-bottom: 10px;
 }
 
 .resources-card a {
-    color: blue;
+    color: #1f4e79;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.resources-card a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 701px) {
+    .profile-holygrail,
+    .country-holygrail {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1.5rem;
+        align-items: start;
+        text-align: left;
+    }
+    .about-card h4 {
+        text-align: left;
+    }
 }
 
 footer {
@@ -162,14 +190,9 @@ footer {
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;
+    margin-top: 2rem;
 }
 
 footer p {
-    margin: 0.4rem ;
-}
-
-.modification {
-    color: #fde047;
-    font-size: 0.85rem;
-    font-weight: 600;
+    margin: 0.4rem;
 }
