@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   header {
     padding: 15px 20px;
   }
@@ -6,7 +6,10 @@
   #menu-toggle {
     display: block;
   }
-
+  header nav a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+  }
   header nav {
     display: none;
     width: 100%;  
