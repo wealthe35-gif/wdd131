@@ -16,10 +16,13 @@
   <header>
     <h1>NIGERIA</h1>  
   </header>
-  <main>
-     <figure class="hero-image">
-        <img src="images/nigeria2.jpg" alt="Beautiful landscape of Nigeria">
-    </figure>
+  <div class="hero-image">
+  <picture>
+    <source srcset="images/nigeria-large.webp" media="(min-width: 768px)">
+    <img src="images/nigeria-small.webp" alt="Beautiful landscape of Nigeria" width="600" height="400">
+  </picture>
+  </div>
+
     
     <section class="data-card">
       <h2>Data</h2>
@@ -34,16 +37,17 @@
       <p><strong>Internet TLD:</strong> .ng</p>
       </div>
     </section>
-    <section class="weather-card">
-      <h2>Weather 🌤️</h2>
+  <section class="weather-card">
+  <h2>Weather</h2>
+  <img src="images/weather-partly-cloudy.svg" alt="Partly cloudy weather icon" class="weather-icon" width="48" height="48">
+  <div class="weather-content">
+    <p><strong>Temperature:</strong> <span id="temp">30</span> °C</p>
+    <p><strong>Conditions:</strong> Partly Cloudy</p>
+    <p><strong>Wind:</strong> <span id="wind">12</span> km/h</p>
+    <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+  </div>
+</section>
 
-      <div class="weather-content">
-      <p><strong>Temperature:</strong> 30 °C</p>
-      <p><strong>Conditions:</strong> Partly Cloudy</p>
-      <p><strong>Wind:</strong> 12 km/h</p>
-      <p><strong>Wind Chill:</strong> 32 °C</p>
-      </div>
-      </section>
   </main>
     <footer>
       <p>💻 Emmanuel U. Innocent 💻 Lagos, Nigeria</p>

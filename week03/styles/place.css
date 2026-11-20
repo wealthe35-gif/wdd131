@@ -52,6 +52,14 @@ main {
   display: block;
 }
 
+:root {
+  --primary-red: #e40e35;
+  --primary-green: #008751;
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.88);
+}
+
 .data-card,
 .weather-card {
   position: absolute;
