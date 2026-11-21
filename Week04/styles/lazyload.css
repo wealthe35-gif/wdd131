@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f4;
+    color: #222;
+    text-align: center;
+}
+
+header {
+    background-color: #245c43;
+    color: white;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin: 30px auto;
+
+    animation: fadeFromBlack 2s ease-in-out;
+}
+
+@keyframes fadeFromBlack {
+    from {
+        opacity: 0;
+        filter: brightness(0);
+    }
+
+    to {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+footer {
+    background-color: #245c43;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
