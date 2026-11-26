@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #214e34;
+    --accent-color: #e86a17;
+    --bg-color: #f5f8f5;
+    --text-color: #262626;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+footer {
+    border-bottom: none;
+    border-top: 4px solid var(--accent-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 6px solid var(--primary-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-box {
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+}
+
+.color-box.primary {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+.color-box.secondary {
+    background-color: var(--accent-color);
+    color: #1a1a1a;
+}
+
+.color-box.background {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+figure {
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #888888;
+    margin: 0.5rem 0;
+}
